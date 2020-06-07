@@ -17,10 +17,10 @@ var updateGuessesLeft = function(){
 };
 
 var updateLetterToGuess = function(){
-    letterToGuess = letters[Math.floor(Math.random() * letters,length)];
+    letterToGuess = letters[Math.floor(Math.random() * letters.length)];
 };
 
-var updateGuessesSoFar = function() {
+var updateGuessesSoFar = function(){
     document.querySelector("#guesses-so-far").innerHTML = guessedLetters.join(", ");
 };
 
